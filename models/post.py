@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Post:
-    def __init__(self, author, body)
+    def __init__(self, author, body):
         self._author = author
         self._body = body
         self._created_timestamp = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")

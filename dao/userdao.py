@@ -12,7 +12,7 @@ class UserDao(DaoBase):
 
     def save_to_file(self):
         with open(self._user_filepath, "w", encoding="utf-8") as f:
-            f.write(json.dumps(self._lookup, cls=Encoder))
+            f.write(json.dumps(self._lookup, cls=Encoder, indent=2))
 
     def read_from_file(self):
         with open(self._user_filepath, "r", encoding="utf-8") as f:

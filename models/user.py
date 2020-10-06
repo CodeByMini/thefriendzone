@@ -61,7 +61,7 @@ class User:
         self._last_seen = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
 
     def add_buddy(self, buddy):
-        self._buddies.append(buddy)
+        self._buddies['buddies'] = buddy
 
     def remove_buddy(self, username) -> bool:
         try:
